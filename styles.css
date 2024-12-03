@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+#sentence-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    min-height: 60px;
+    border: 2px dashed #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.blank {
+    background-color: #e0e0e0;
+    color: #666;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#options-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.word-block {
+    background-color: #007bff; /* Azul */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: grab;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.word-block:active {
+    cursor: grabbing;
+}
+
+.word-block:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#timer {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ff0000;
+}
+#instruction {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #e7f3ff; /* Fondo azul claro */
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+}
+
+#instruction h2 {
+    color: #0056b3; /* Azul oscuro */
+    font-size: 20px;
+    margin: 0;
+}
+
+#instruction p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
